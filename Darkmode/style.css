@@ -13,6 +13,24 @@ html {
     --color-text: #333333;
     
 }
+
 body {
     background-color: var(--bg);
+}
+
+.container {
+    background-color: var(--bg-panel);
+
+    margin: 5em;
+    padding: 5em;
+
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "title switch"
+        "content content"
+    ;
 }
