@@ -6,9 +6,13 @@ html {
     align-items: center;
     justify-items: center;
 
+    /*Essas variveis eu espalho no css inteiro*/
     --bg: #FCFCFC;
     --bg-panel: #EBEBEB;
     --color-headings: #0077FF;
     --color-text: #333333;
     
+}
+body {
+    background-color: var(--bg);
 }
