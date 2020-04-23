@@ -4,5 +4,11 @@ html {
 
     display: grid;
     align-items: center;
+    justify-items: center;
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
     
 }
