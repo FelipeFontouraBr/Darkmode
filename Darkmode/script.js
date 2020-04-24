@@ -14,6 +14,15 @@ const initialColors = { //vamos pegar as cores iniciais //Objeto com as propried
     colorText: getStyle(html, "--color-text"),
 }  
 
+//Darkmode:
+const darkMode = { 
+    bg: "#333333",
+    bgPanel: "#434343",
+    colorHeadings: "#3664FF",
+    colorText: "#B5B5B5"
+}  
+
+
 const changeColors = (colors) => { //um função que recebe colors //aqui precisamos do dark modes e initial mode (cor inicial)
 
 }
