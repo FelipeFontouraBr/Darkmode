@@ -15,16 +15,19 @@ const initialColors = { //vamos pegar as cores iniciais //Objeto com as propried
 }  
 
 //Darkmode:
-const darkMode = { 
+const darkMode = {
     bg: "#333333",
     bgPanel: "#434343",
     colorHeadings: "#3664FF",
     colorText: "#B5B5B5"
-}  
+} 
 
-
+//Lógica: 
 const changeColors = (colors) => { //um função que recebe colors //aqui precisamos do dark modes e initial mode (cor inicial)
-    
+//aqui fazemos a alteração do html //Transformamos cada chave do objeto(const inicitalColors) nos nomes (--bg-panel, --color-headings etc)
+//1ª todos as cores que queremos, portanto mapear um objeto:
+Object.keys(colors).map()//vou pegar as chaves das cores e fazer um map passando a chave e vai retornar algo:
+    html.style.setProperty("--bg", "#333333")//vamos mexer no style do HTML e setar a propriedade que queremos mudar o background
 }
 
 checkbox.addEventListener("change", ({target}) => { //Vai ouvir "mudanças-change", sempre que mudar vai rodar uma função padrão
