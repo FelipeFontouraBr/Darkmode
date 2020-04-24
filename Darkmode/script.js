@@ -22,12 +22,19 @@ const darkMode = {
     colorText: "#B5B5B5"
 } 
 
+//Função que transforma automaticamente de light para darkmode e viseversa
+const transformKey = key => 
+    "--" + key.replace(/([A-Z])/, "-$1")
+    
+    //explicação acima: arrowfunction que vai receber uma chave que vai alterar.//Começar com traço e somar mais coisas //Pegar a chave e fazer um replace e colocar uma expressão regular(procure tudo que for letra maiscula de A a Z em cada chave e vai guardar em uma constante), colar um traço por conta do "--bg-(<-esse traço) panel" e transformar para LowerCase.
+
 //Lógica: 
 const changeColors = (colors) => { //um função que recebe colors //aqui precisamos do dark modes e initial mode (cor inicial)
 //aqui fazemos a alteração do html //Transformamos cada chave do objeto(const inicitalColors) nos nomes (--bg-panel, --color-headings etc)
 //1ª todos as cores que queremos, portanto mapear um objeto:
-Object.keys(colors).map()//vou pegar as chaves das cores e fazer um map passando a chave e vai retornar algo:
-    html.style.setProperty("--bg", "#333333")//vamos mexer no style do HTML e setar a propriedade que queremos mudar o background
+    Object.keys(colors).map(key =>//vou pegar as chaves das cores e fazer um map passando a chave e vai retornar algo:
+        html.style.setProperty(transformKey(key), colors[key])//vamos mexer no style do HTML e setar a propriedade que queremos mudar o background
+    )//colors[] de dentro dela eu procuro a posição key
 }
 
 checkbox.addEventListener("change", ({target}) => { //Vai ouvir "mudanças-change", sempre que mudar vai rodar uma função padrão
