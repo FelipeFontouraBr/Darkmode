@@ -1,8 +1,17 @@
 const html = document.querySelector("html")
 const checkbox = document.querySelector("input[name=theme]")//Checkbox responsável por fazer a alteração, toda mudança vamos aplicar algo
 
+//element que queremos, deixar ele dinamico e vamos pegar o style que queremos
+const getStyle = (element, style) => 
+    window
+        .getComputedStyle(element)
+        .getPropertyValue(style)
+
 const initialColors = { //vamos pegar as cores iniciais
-    bg: window.getComputedStyle(html).getPropertyValue("--bg")//pegar esse estilo do css
+    bg: getStyle(html, "--bg"), //colocamos o html e queremos dele o bg(background)
+    bg: getStyle(html, "--bg"),
+    bg: getStyle(html, "--bg"),
+    bg: getStyle(html, "--bg"),
 }  
 
 const changeColors = (colors) => { //um função que recebe colors //aqui precisamos do dark modes e initial mode (cor inicial)
