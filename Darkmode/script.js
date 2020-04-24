@@ -24,7 +24,7 @@ const darkMode = {
 
 //Função que transforma automaticamente de light para darkmode e viseversa
 const transformKey = key => 
-    "--" + key.replace(/([A-Z])/, "-$1")
+    "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
     
     //explicação acima: arrowfunction que vai receber uma chave que vai alterar.//Começar com traço e somar mais coisas //Pegar a chave e fazer um replace e colocar uma expressão regular(procure tudo que for letra maiscula de A a Z em cada chave e vai guardar em uma constante), colar um traço por conta do "--bg-(<-esse traço) panel" e transformar para LowerCase.
 

@@ -43,6 +43,9 @@ h1 {
 p {
     color: var(--color-text);
     grid-area: content;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    margin-top: 2em;
 }
 
 /*Configuração do botão: */
