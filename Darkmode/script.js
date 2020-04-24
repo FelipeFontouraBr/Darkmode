@@ -24,9 +24,9 @@ const darkMode = {
 
 
 const changeColors = (colors) => { //um função que recebe colors //aqui precisamos do dark modes e initial mode (cor inicial)
-
+    
 }
 
 checkbox.addEventListener("change", ({target}) => { //Vai ouvir "mudanças-change", sempre que mudar vai rodar uma função padrão
-    target.checked ? changeColors() : changeColors() //Se o target tiver marcado, vai passar uma cor de um jeito ou cor de outro jeito
+    target.checked ? changeColors(darkMode) : changeColors(initialColors) //Se o target tiver marcado, vai passar uma cor de um jeito ou cor de outro jeito //Quando ele estiver chacked vai ser darkMode e quando não estiver vai ser light
 })
