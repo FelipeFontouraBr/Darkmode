@@ -4,7 +4,7 @@ Night mode, also known as "dark mode", is a function that seeks to reduce the im
 ## How to Use
 Clicking the button changes the color of the theme, switching from lightmode to darkmode, which can always be changed with a simple click.
 
- #### Technologies
+ ### Technologies
 
  - JavaScript;
  - HTML 5;
